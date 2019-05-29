@@ -1,5 +1,10 @@
 #include "Exercise.h"
 
+ExerciseA::ExerciseA(int topicIndex, ExerciseType exerciseType/* = ExerciseType::ExerciseTypeA*/
+    , QObject* parent/*= Q_NULLPTR*/)
+    : Exercise(exerciseType, topicIndex, parent)
+    , m_topicTips("true or false") {}
+
 void ExerciseA::showTopicATips(bool show)
 {
     if (show)

@@ -36,8 +36,7 @@ class ExerciseA : public Exercise
 {
     Q_OBJECT
 public:
-    ExerciseA(int topicIndex, ExerciseType exerciseType = ExerciseType::ExerciseTypeA, QObject* parent = Q_NULLPTR)
-        : Exercise(exerciseType, topicIndex, parent), m_topicTips("true or false") {}
+    ExerciseA(int topicIndex, ExerciseType exerciseType = ExerciseType::ExerciseTypeA, QObject* parent = Q_NULLPTR);
 
 signals:
     void handleFinished();

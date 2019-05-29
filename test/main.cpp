@@ -5,6 +5,7 @@
 #include <QTimer>
 
 #include "Exercise.h"
+#include "moc.h"
 
 void test1()
 {
@@ -42,10 +43,28 @@ void testQMap()
 void testConnect()
 {
     Exercise* ex = new ExerciseA(3);
-    QTimer::singleShot(1000, ex, SLOT(type()));
+    //QTimer::singleShot(1000, ex, SLOT(showTopicATips(bool)));
     qDebug() << "topic index: " << ex->topicIndex();
     //ex->type();
 }
+
+void toLocal8Bit_test()
+{
+    QString s = "00-1B-10-31-01-82";
+    QString s2 = s.toLocal8Bit().data();
+    QString s3 = s2.toLocal8Bit().data();
+    //char *
+}
+
+void moc_debug()
+{
+    Counter a, b;
+    QObject::connect(&a, SIGNAL(valueChanged(int)),
+        &b, SLOT(setValue(int)));
+
+    a.setValue(12);
+}
+
 
 int main(int argc, char *argv[])
 {
@@ -53,7 +72,9 @@ int main(int argc, char *argv[])
 	//test1();
     //test2();
     //testQMap();
-    testConnect();
+    //testConnect();
+    //toLocal8Bit_test();
+    moc_debug();
 
 	return a.exec();
 }
