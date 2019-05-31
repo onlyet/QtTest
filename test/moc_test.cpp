@@ -1,4 +1,4 @@
-#include "moc.h"
+#include "moc_test.h"
 
 void Counter::setValue(int value)
 {

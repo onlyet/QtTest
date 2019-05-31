@@ -1,11 +1,13 @@
-#include <QtCore/QCoreApplication>
+//#include <QtCore/QCoreApplication>
+#include <QApplication>
 #include <QDebug>
 #include <QStringList>
 #include <QTime>
 #include <QTimer>
 
 #include "Exercise.h"
-#include "moc.h"
+#include "moc_test.h"
+#include "property_system_test.h"
 
 void test1()
 {
@@ -68,13 +70,14 @@ void moc_debug()
 
 int main(int argc, char *argv[])
 {
-	QCoreApplication a(argc, argv);
+	QApplication a(argc, argv);
 	//test1();
     //test2();
     //testQMap();
     //testConnect();
     //toLocal8Bit_test();
-    moc_debug();
+    //moc_debug();
+    Property_Test();
 
 	return a.exec();
 }

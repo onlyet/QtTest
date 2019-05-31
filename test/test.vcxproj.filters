@@ -29,7 +29,7 @@
     <QtMoc Include="Exercise.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="moc.h">
+    <QtMoc Include="moc_test.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -40,11 +40,19 @@
     <ClCompile Include="Exercise.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="moc.cpp">
+    <ClCompile Include="moc_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_moc.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_test_moc_test.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="property_system_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="property_system_test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,11 +4,16 @@
 class Counter : public QObject
 {
     Q_OBJECT
-        int m_value;
 public:
     int value() const { return m_value; }
-    public slots :
-        void setValue(int value);
+
 signals:
     void valueChanged(int newValue);
+    void display();
+
+    public slots :
+    void setValue(int value);
+
+private:
+    int m_value;
 };
