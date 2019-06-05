@@ -4,10 +4,14 @@
 #include <QStringList>
 #include <QTime>
 #include <QTimer>
+#include <QWidget>
+
 
 #include "Exercise.h"
 #include "moc_test.h"
 #include "property_system_test.h"
+
+#include "common.h"
 
 void test1()
 {
@@ -77,7 +81,12 @@ int main(int argc, char *argv[])
     //testConnect();
     //toLocal8Bit_test();
     //moc_debug();
-    Property_Test();
+    //Property_Test();
+
+    test();
+
+ /*   QWidget w;
+    w.show();*/
 
 	return a.exec();
 }
