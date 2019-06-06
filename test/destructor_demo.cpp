@@ -3,6 +3,10 @@
 #include <QLabel>
 #include <QDebug>
 
+#include <vector>
+
+using namespace std;
+
 class MyWidget : public QWidget {
 public:
     MyWidget(QWidget* parent = Q_NULLPTR) {
@@ -72,40 +76,3 @@ void destructor_demo_4()
     }
 }
 
-QString getStringFromUnsignedChar(unsigned char *str) 
-{
-    QString result = "";
-    int lengthOfString = strlen(reinterpret_cast<const char*>(str));
-
-    // print string in reverse order
-    QString s;
-    for (int i = 0; i < lengthOfString; i++) 
-    {
-        s = QString("%1").arg(str[i], 0, 16);
-
-        // account for single-digit hex values (always must serialize as two digits)
-        if (s.length() == 1)
-            result.append("0");
-
-        result.append(s);
-    }
-
-    return result;
-}
-
-//void fromLocal8Bit_demo()
-//{
-//    unsigned char macAddress[6] = { 0xD2, 0x24, 0x3F, 0x69, 0xA8, 0xE2 };
-//    QString m_mac = QString::fromLocal8Bit((char*)macAddress);
-//    char* mac = m_mac.toLocal8Bit().data();
-//    char buf[1024] = { 1024 };
-//    sprintf_s(buf, 1024, "mac %2X %02X %02X %02X %02X %02X \r\n", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-//
-//}
-
-void fromLocal8Bit_demo()
-{
-    unsigned char macAddress[7] = { 0xD2, 0x24, 0x3F, 0x69, 0xA8, 0xE2, 0};
-    QString s = getStringFromUnsignedChar(macAddress);
-    char* c = s.toLocal8Bit().data();
-}

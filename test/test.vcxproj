@@ -113,6 +113,7 @@
     </ClCompile>
     <ClCompile Include="moc_test.cpp" />
     <ClCompile Include="property_system_test.cpp" />
+    <ClCompile Include="qstring_to_char_array.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Exercise.h" />

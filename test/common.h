@@ -10,3 +10,7 @@ void destructor_demo_4();
 
 void fromLocal8Bit_demo();
 
+void qstringToUnsignedCharArray();
+
+void qstringToCharArray();
+
