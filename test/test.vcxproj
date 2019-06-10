@@ -100,7 +100,6 @@
     <ClCompile Include="common.cpp" />
     <ClCompile Include="destructor_demo.cpp" />
     <ClCompile Include="Exercise.cpp" />
-    <ClCompile Include="GeneratedFiles\Debug\moc_test_moc_test.cpp" />
     <ClCompile Include="main.cpp">
       <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
@@ -119,10 +118,7 @@
     <QtMoc Include="Exercise.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="moc_test.h">
-      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename)_%(Filename).cpp</OutputFile>
-      <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename)_%(Filename).cpp</OutputFile>
-    </QtMoc>
+    <QtMoc Include="moc_test.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
