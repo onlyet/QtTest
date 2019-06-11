@@ -58,6 +58,9 @@
     <ClCompile Include="qstring_to_char_array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="debugQtSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="property_system_test.h">

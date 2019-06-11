@@ -14,3 +14,5 @@ void qstringToUnsignedCharArray();
 
 void qstringToCharArray();
 
+void debugQtSource();
+

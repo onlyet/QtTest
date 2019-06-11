@@ -7,5 +7,6 @@ void test()
     //destructor_demo_4();
     //fromLocal8Bit_demo();
     //qstringToUnsignedCharArray();
-    qstringToCharArray();
+    //qstringToCharArray();
+    debugQtSource();
 }
