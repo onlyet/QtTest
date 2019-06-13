@@ -16,3 +16,5 @@ void qstringToCharArray();
 
 void debugQtSource();
 
+void byteArrayToHexStringDemo();
+

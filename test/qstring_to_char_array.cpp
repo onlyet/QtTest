@@ -176,4 +176,59 @@ void vectorDemo()
 {
     const char* str = "hello";
     vector<char> v(str, str + strlen(str));
+    //const unsigned char* s2 = "hello";
+    //vector<unsigned char> v2(s2, s2 + 5);
+
+    //QVector<unsigned char> v3(s2, s2 + 5);
+}
+
+
+bool byteArrayToHexString(const QVector<unsigned char>& vecMac, QString& strMac)
+{
+    if (vecMac.size() != 6 || !strMac.isEmpty())
+    {
+        qDebug() << "input parameters incorrect";
+        return false;
+    }
+    foreach(const unsigned char& c, vecMac)
+    {
+        strMac.append(QString::number(static_cast<unsigned int>(c), 16).toUpper());
+    }
+
+    return true;
+}
+
+bool byteArrayToHexString(unsigned char* mac, QString& strMac)
+{
+    if (!strMac.isEmpty())
+    {
+        qDebug() << "input parameters incorrect";
+        return false;
+    }
+    for (int i = 0; i < 6; ++i)
+    {
+        strMac.append(QString::number(mac[i], 16).toUpper());
+    }
+
+    return true;
+}
+
+void byteArrayToHexStringDemo()
+{
+    QString strMac;
+    //F3C8EDF6C048
+    //QVector<unsigned char> vecMac = { 0xF3, 0xC8, 0xED, 0xF6, 0xC0, 0x48 };
+    //bool ret = byteArrayToHexString(vecMac, strMac);
+
+    unsigned char mac[] = { 0xF3, 0xC8, 0xED, 0xF6, 0xC0, 0x48 };
+    bool ret = byteArrayToHexString(mac, strMac);
+    if (ret)
+    {
+        qDebug() << "transfered mac: " << strMac;
+    }
+}
+
+void test6_13_12_28()
+{
+
 }
