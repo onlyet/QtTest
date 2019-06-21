@@ -228,7 +228,27 @@ void byteArrayToHexStringDemo()
     }
 }
 
-void test6_13_12_28()
-{
+#define QT_NO_CAST_FROM_ASCII
 
+void QStringToConstCharPointer()
+{
+    QString path = "D:/gdjy_svn/SmartClass/Code/WisdomClassForPC/Win32/Debug/WisdomClassForPC.exe";
+    QByteArray ba = path.toLocal8Bit();
+    const char* p = ba.data();
+
+    QByteArray ba2 = path.toLocal8Bit();
+    const char* p2 = ba2.data();
+
+    string s = path.toStdString();
+    const char* p3 = s.c_str();
+
+    QString chinese = "中国人isgood";
+    QByteArray ba4 = chinese.toLocal8Bit();
+    const char* p4 = ba4.data();
+
+    QString chinese2 = QStringLiteral("中国人isgood");
+    QByteArray ba5 = chinese2.toLocal8Bit();
+    const char* p5 = ba5.data();
+
+    qDebug() << "1";
 }

@@ -18,3 +18,4 @@ void debugQtSource();
 
 void byteArrayToHexStringDemo();
 
+void QStringToConstCharPointer();
