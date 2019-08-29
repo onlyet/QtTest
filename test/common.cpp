@@ -10,5 +10,9 @@ void test()
     //qstringToCharArray();
     //debugQtSource();
     //byteArrayToHexStringDemo();
-    QStringToConstCharPointer();
+    //QStringToConstCharPointer();
+    //runProgramInExplorerProcess();
+    coreDumpTest();
+
+
 }

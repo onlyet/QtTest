@@ -58,6 +58,12 @@
     <ClCompile Include="debugQtSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="runProgramInExplorerProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="coreDump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="property_system_test.h">
