@@ -32,6 +32,9 @@
     <QtMoc Include="moc_test.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="signal_after_main_exec.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,6 +65,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="coreDump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="signal_after_main_exec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

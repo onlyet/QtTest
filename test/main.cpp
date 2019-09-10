@@ -71,6 +71,8 @@ void moc_debug()
     a.setValue(12);
 }
 
+#include "signal_after_main_exec.h"
+extern Boss b;
 
 int main(int argc, char *argv[])
 {
@@ -88,5 +90,19 @@ int main(int argc, char *argv[])
  /*   QWidget w;
     w.show();*/
 
-	return a.exec();
+	//return a.exec();
+
+    QObject::connect(&a, &QApplication::aboutToQuit, &b, &Boss::emitAfterMainExec);
+
+    b.init();
+    QTimer::singleShot(3000, [&a]() {
+        a.exit();
+    });
+
+    int ret = a.exec();
+    qDebug() << "main exit begin";
+
+    return ret;
+    qDebug() << "main exit end";
+
 }

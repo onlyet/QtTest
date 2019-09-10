@@ -12,7 +12,7 @@ void test()
     //byteArrayToHexStringDemo();
     //QStringToConstCharPointer();
     //runProgramInExplorerProcess();
-    coreDumpTest();
+    //coreDumpTest();
 
 
 }
