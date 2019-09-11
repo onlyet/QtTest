@@ -70,6 +70,9 @@
     <ClCompile Include="signal_after_main_exec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hexString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="property_system_test.h">

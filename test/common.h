@@ -23,3 +23,6 @@ void QStringToConstCharPointer();
 void runProgramInExplorerProcess();
 
 void coreDumpTest();
+
+void hexStringTest();
+
