@@ -103,6 +103,7 @@
     <ClCompile Include="debugQtSource.cpp" />
     <ClCompile Include="destructor_demo.cpp" />
     <ClCompile Include="Exercise.cpp" />
+    <ClCompile Include="hexString.cpp" />
     <ClCompile Include="main.cpp">
       <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>

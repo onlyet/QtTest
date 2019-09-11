@@ -90,19 +90,19 @@ int main(int argc, char *argv[])
  /*   QWidget w;
     w.show();*/
 
-	//return a.exec();
+	return a.exec();
 
-    QObject::connect(&a, &QApplication::aboutToQuit, &b, &Boss::emitAfterMainExec);
+    //QObject::connect(&a, &QApplication::aboutToQuit, &b, &Boss::emitAfterMainExec);
 
-    b.init();
-    QTimer::singleShot(3000, [&a]() {
-        a.exit();
-    });
+    //b.init();
+    //QTimer::singleShot(3000, [&a]() {
+    //    a.exit();
+    //});
 
-    int ret = a.exec();
-    qDebug() << "main exit begin";
+    //int ret = a.exec();
+    //qDebug() << "main exit begin";
 
-    return ret;
-    qDebug() << "main exit end";
+    //return ret;
+    //qDebug() << "main exit end";
 
 }
