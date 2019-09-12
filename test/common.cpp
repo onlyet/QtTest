@@ -13,7 +13,7 @@ void test()
     //QStringToConstCharPointer();
     //runProgramInExplorerProcess();
     //coreDumpTest();
-    hexStringTest();
-
+    //hexStringTest();
+    qapplication_exit();
 
 }

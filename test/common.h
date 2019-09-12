@@ -26,3 +26,4 @@ void coreDumpTest();
 
 void hexStringTest();
 
+void qapplication_exit();
