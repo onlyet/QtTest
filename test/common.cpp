@@ -14,6 +14,7 @@ void test()
     //runProgramInExplorerProcess();
     //coreDumpTest();
     //hexStringTest();
-    qapplication_exit();
+    //qapplication_exit();
+    base64_encode();
 
 }

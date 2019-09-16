@@ -76,6 +76,9 @@
     <ClCompile Include="qapplication_exit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="base64_encode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="property_system_test.h">

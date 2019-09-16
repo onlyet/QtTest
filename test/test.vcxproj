@@ -98,6 +98,7 @@
     </QtMoc>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="base64_encode.cpp" />
     <ClCompile Include="common.cpp" />
     <ClCompile Include="coreDump.cpp" />
     <ClCompile Include="debugQtSource.cpp" />
