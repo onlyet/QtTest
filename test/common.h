@@ -29,3 +29,5 @@ void hexStringTest();
 void qapplication_exit();
 
 void base64_encode();
+
+void chineseToHexInteger();

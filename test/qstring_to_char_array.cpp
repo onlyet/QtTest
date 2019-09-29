@@ -2,6 +2,7 @@
 #include <vector>
 #include <QString>
 #include <QDebug>
+#include <iostream>
 
 using namespace std;
 
@@ -251,4 +252,32 @@ void QStringToConstCharPointer()
     const char* p5 = ba5.data();
 
     qDebug() << "1";
+}
+
+unsigned char ch2hex(char ch)
+{
+    static const char *hex = "0123456789ABCDEF";
+    for (unsigned char i = 0; i != 16; ++i)
+        if (ch == hex[i])
+            return i;
+    return 0;
+}
+
+string tohex(const string& str)
+{
+    string ret;
+    static const char *hex = "0123456789ABCDEF";
+    for (int i = 0; i != str.size(); ++i)
+    {
+        ret.push_back(hex[(str[i] >> 4) & 0xf]);
+        ret.push_back(hex[str[i] & 0xf]);
+    }
+    return ret;
+}
+
+void chineseToHexInteger()
+{
+    //cout << tohex("中国人") << endl;
+    //qDebug() << QString::fromStdString(tohex("中"));
+    qDebug() << QString::fromStdString(tohex("别"));
 }

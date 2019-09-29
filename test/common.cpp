@@ -15,6 +15,6 @@ void test()
     //coreDumpTest();
     //hexStringTest();
     //qapplication_exit();
-    base64_encode();
-
+    //base64_encode();
+    chineseToHexInteger();
 }
