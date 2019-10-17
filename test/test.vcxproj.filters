@@ -35,6 +35,9 @@
     <QtMoc Include="signal_after_main_exec.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="WCListWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -85,12 +88,21 @@
     <ClCompile Include="QMenu_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WCListWidget_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WCListWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="property_system_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WCListWidget_test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
