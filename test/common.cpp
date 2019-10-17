@@ -16,5 +16,7 @@ void test()
     //hexStringTest();
     //qapplication_exit();
     //base64_encode();
-    chineseToHexInteger();
+    //chineseToHexInteger();
+    QTreeWidget_demo();
+    //QMenu_demo();
 }

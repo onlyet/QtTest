@@ -118,7 +118,9 @@
     <ClCompile Include="moc_test.cpp" />
     <ClCompile Include="property_system_test.cpp" />
     <ClCompile Include="qapplication_exit.cpp" />
+    <ClCompile Include="QMenu_test.cpp" />
     <ClCompile Include="qstring_to_char_array.cpp" />
+    <ClCompile Include="QTreeWidget_test.cpp" />
     <ClCompile Include="runProgramInExplorerProcess.cpp" />
     <ClCompile Include="signal_after_main_exec.cpp" />
   </ItemGroup>

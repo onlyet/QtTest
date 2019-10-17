@@ -31,3 +31,7 @@ void qapplication_exit();
 void base64_encode();
 
 void chineseToHexInteger();
+
+void QTreeWidget_demo();
+
+void QMenu_demo();

@@ -79,6 +79,12 @@
     <ClCompile Include="base64_encode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QTreeWidget_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QMenu_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="property_system_test.h">

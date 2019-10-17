@@ -4,7 +4,7 @@
 #include <QDebug>
 #include <QTimer>
 
-Boss b;
+//Boss b;
 
 Worker::~Worker()
 {
