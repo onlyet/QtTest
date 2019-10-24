@@ -8,6 +8,11 @@
 
 void QTreeWidget_demo()
 {
+    {
+        QTreeWidgetItem* item = new QTreeWidgetItem;
+        item->setData(0, Qt::UserRole, QStringLiteral("ÎÒÊÇË­"));
+        QString name = item->data(0, Qt::UserRole).toString();
+    }
 
     //QTextCodec::setCodecForLocale(QTextCodec::codecForName("gb18030"));
     QTreeWidget *tree = new QTreeWidget;
