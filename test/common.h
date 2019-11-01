@@ -35,3 +35,7 @@ void chineseToHexInteger();
 void QTreeWidget_demo();
 
 void QMenu_demo();
+
+void QList_demo();
+
+void QMap_demo();

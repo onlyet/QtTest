@@ -17,6 +17,9 @@ void test()
     //qapplication_exit();
     //base64_encode();
     //chineseToHexInteger();
-    QTreeWidget_demo();
+    //QTreeWidget_demo();
     //QMenu_demo();
+    //QList_demo();
+    QMap_demo();
+
 }
