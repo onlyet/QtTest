@@ -19,7 +19,7 @@ void test()
     //chineseToHexInteger();
     //QTreeWidget_demo();
     //QMenu_demo();
-    //QList_demo();
-    QMap_demo();
+    QList_demo();
+    //QMap_demo();
 
 }
