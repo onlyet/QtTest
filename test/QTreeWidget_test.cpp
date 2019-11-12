@@ -25,7 +25,7 @@ void QTreeWidget_demo()
 
 
     QStringList zhangsan;
-    zhangsan << QStringLiteral("我的笔记");
+    zhangsan << QStringLiteral("我的笔记        6");
     QTreeWidgetItem *zhangsanroot = new QTreeWidgetItem(tree, zhangsan);
     //zhangsanroot->set
     //tree->setItemWidget()
@@ -37,12 +37,14 @@ void QTreeWidget_demo()
 
 
     QStringList lisi;
-    lisi << QStringLiteral("工作笔记");
+    lisi << QStringLiteral("工作笔记        10");
     QTreeWidgetItem *lisiroot = new QTreeWidgetItem(tree, lisi);
+    lisiroot->setIcon(0, QIcon("C:\\dev\\test\\QtTest\\test\\resource\\workNote2x.png"));
 
     QStringList classNote;
-    classNote << QStringLiteral("课堂笔记");
+    classNote << QStringLiteral("课堂笔记        2");
     QTreeWidgetItem *classNoteItem = new QTreeWidgetItem(tree, classNote);
+    classNoteItem->setIcon(0, QIcon("C:\\dev\\test\\QtTest\\test\\resource\\onClassNote2x.png"));
 
     tree->addTopLevelItem(zhangsanroot);
     tree->addTopLevelItem(lisiroot);

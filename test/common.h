@@ -39,3 +39,5 @@ void QMenu_demo();
 void QList_demo();
 
 void QMap_demo();
+
+void QUuid_demo();

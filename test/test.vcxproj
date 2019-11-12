@@ -123,6 +123,7 @@
     <ClCompile Include="QMenu_test.cpp" />
     <ClCompile Include="qstring_to_char_array.cpp" />
     <ClCompile Include="QTreeWidget_test.cpp" />
+    <ClCompile Include="QUuid_demo.cpp" />
     <ClCompile Include="runProgramInExplorerProcess.cpp" />
     <ClCompile Include="signal_after_main_exec.cpp" />
     <ClCompile Include="WCListWidget.cpp" />
