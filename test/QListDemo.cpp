@@ -38,4 +38,46 @@ void QList_demo()
     QString tt = ("2019-10-17 16:35:59");
     int secs_tt = QDateTime::fromString(tt, "yyyy-MM-dd hh:mm:ss").toSecsSinceEpoch();
 
+
+    QString s3 = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss");
+    qint64 dt2 = QDateTime::fromString(s3, "yyyy-MM-dd hh:mm:ss").toMSecsSinceEpoch();
+
+    qint64 t = QDateTime::currentMSecsSinceEpoch();
+    QString s4 = QDateTime::fromMSecsSinceEpoch(t).toString("yyyy-MM-dd hh:mm:ss");
+    QString s5 = QDateTime::fromMSecsSinceEpoch(t).toString("yyyy-MM-dd hh:mm:ss.zzz");
+
+    //qint64 folderId = QDateTime::currentMSecsSinceEpoch();  //13Î»Êý
+    //QString id = QString::number(folderId);
+    //qint64 f2 = id.toLongLong();
+    //QString s6 = QDateTime::fromMSecsSinceEpoch(id.toLongLong()).toString("yyyy-MM-dd hh:mm:ss");
+
+
+    QString folderId = QString::number(QDateTime::currentMSecsSinceEpoch());
+    QString cjsj = QDateTime::fromMSecsSinceEpoch(folderId.toLongLong()).toString("yyyy-MM-dd hh:mm:ss");
+
+    QString dd1 = "1572623374871";
+    QString dd2 = "1572623374873";
+    qDebug() << (dd1 > dd2 ? ">" : "<");
+
+    QVariantMap vm;
+    vm.insert("id", "1");
+    vm.insert("name", "hello");
+    QVariantMap vm2;
+    vm2.insert("id", "2");
+    vm2.insert("name", "world");
+    QVariantMap vm3;
+    vm3.insert("id", "3");
+    vm3.insert("name", "!!!");
+    QVariantMap pagesInfo;
+    pagesInfo.insert("1", vm);
+    pagesInfo.insert("2", vm2);
+    pagesInfo.insert("3", vm3);
+
+    for (auto& item : pagesInfo)
+    {
+        QVariantMap pageInfo = item.toMap();
+        pageInfo["name"] = "shit";
+        item = pageInfo;
+    }
 }
+
