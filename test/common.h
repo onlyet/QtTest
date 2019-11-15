@@ -41,3 +41,5 @@ void QList_demo();
 void QMap_demo();
 
 void QUuid_demo();
+
+void testHexQStringToByteArray();

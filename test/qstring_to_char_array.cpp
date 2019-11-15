@@ -132,8 +132,26 @@ bool hexQstringToCharArray(const QString& strMac, QVector<char>& vecMac)
 //    }
 //}
 
+char* stringToCharArray(const QString &mac)
+{
+    char* macChar = new char[4];
+    QStringList strs = mac.split("-");
+    for (int i = strs.count() - 1; i >= 2; i--)
+    {
+        bool ok = false;
+        macChar[strs.count() - 1 - i] = strs[i].toUInt(&ok, 16);
+    }
+    return macChar;
+}
+
 void qstringToUnsignedCharArray()
 {
+    {
+        QString mac = "AA-BB-CC-DD-EE-FF";
+        char* macChar = stringToCharArray(mac);
+
+    }
+
     //QString strMac = "D2243F69A8E2";
     QString strMac = "F3C8EDF6C048";
 
@@ -280,4 +298,73 @@ void chineseToHexInteger()
     //cout << tohex("中国人") << endl;
     //qDebug() << QString::fromStdString(tohex("中"));
     qDebug() << QString::fromStdString(tohex("别"));
+}
+
+
+// 17位16进制mac字符串转为6位字节数组
+// demo: unsigned char* byteArr = hexStringToByteArray(QString("A1-B2-C3-D4-E5-F6")).data();
+QVector<unsigned char> hexStringToByteArray(const QString& strMac)
+{
+    QVector<unsigned char> vecMac;
+    unsigned char* p = vecMac.data();
+    if (strMac.size() != 17)
+    {
+        return vecMac;
+    }
+    for (int i = 0; i < strMac.size(); i += 3)
+    {
+        QString num = strMac.mid(i, 2);
+        bool ok = false;
+        vecMac.push_back(num.toUInt(&ok, 16));
+        if (!ok)
+        {
+            return QVector<unsigned char>();
+        }
+    }
+    return vecMac;
+}
+
+//6位字节数组转17位16进制QString
+QString byteArrayToHexString(unsigned char* str)
+{
+    QString result = "";
+    //int lengthOfString = strlen(reinterpret_cast<const char*>(str));
+    int lengthOfString = 6;
+
+    QString s;
+    for (int i = 0; i < lengthOfString; ++i)
+    {
+        s = QString("%1").arg(str[i], 0, 16);
+
+        // account for single-digit hex values (always must serialize as two digits)
+        if (s.length() == 1)
+            result.append("0");
+
+        result.append(s.toUpper());
+        result.append('-');
+    }
+
+    //删除最后一个'-'
+    result.chop(1);
+
+    return result;
+}
+
+void testHexQStringToByteArray()
+{
+    QString s_font_code = QString("A1-B2-C3-D4-E5-F6");
+    QString s_font_code2 = QStringLiteral("填空题");
+    QString s_font_code3 = QStringLiteral("判断题");
+    //PBYTE font_code = mixCharArray(s_font_code.toLocal8Bit().data());
+    //PBYTE font_code2 = mixCharArray(s_font_code2.toLocal8Bit().data());
+    //PBYTE font_code3 = mixCharArray(s_font_code3.toLocal8Bit().data());
+
+    QVector<unsigned char> byteArr1 = hexStringToByteArray(s_font_code);
+    QVector<unsigned char> byteArr2 = hexStringToByteArray(s_font_code2);
+    QVector<unsigned char> byteArr3 = hexStringToByteArray(s_font_code3);
+
+    unsigned char* pByte1 = byteArr1.data();
+    unsigned char* pByte2 = byteArr2.data();
+    unsigned char* pByte3 = byteArr3.data();
+
 }
