@@ -15,11 +15,14 @@ void drawCircleInPixmap()
     QPainter painter(&pixmap);
     // ·´×ßÑù
     painter.setRenderHint(QPainter::Antialiasing, true);
-    painter.setPen(QColor(48.190, 142, 1));
-    painter.setBrush(QColor(48.190, 142, 1));
+    painter.setPen(QColor(250, 250, 250, 1));
+    painter.setBrush(QColor(250, 250, 250, 1));
     painter.setBackgroundMode(Qt::TransparentMode);
     //painter.drawEllipse(0, 0, 10, 10);
     painter.drawRect(0, 0, 10, 10);
+
+    painter.setPen(QColor(48.190, 142, 1));
+    painter.setBrush(QColor(48.190, 142, 1));
     painter.drawEllipse(QPointF(5, 5), 5, 5);
     ////noteItem->setIcon(0, pixmap);
 
