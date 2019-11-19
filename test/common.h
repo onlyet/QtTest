@@ -43,3 +43,5 @@ void QMap_demo();
 void QUuid_demo();
 
 void testHexQStringToByteArray();
+
+void drawCircleInPixmap();

@@ -22,5 +22,6 @@ void test()
     //QList_demo();
     //QMap_demo();
     //QUuid_demo();
-    testHexQStringToByteArray();
+    //testHexQStringToByteArray();
+    drawCircleInPixmap();
 }
