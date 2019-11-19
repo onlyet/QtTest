@@ -261,10 +261,6 @@ void QStringToConstCharPointer()
     string s = path.toStdString();
     const char* p3 = s.c_str();
 
-    QString chinese = "中国人isgood";
-    QByteArray ba4 = chinese.toLocal8Bit();
-    const char* p4 = ba4.data();
-
     QString chinese2 = QStringLiteral("中国人isgood");
     QByteArray ba5 = chinese2.toLocal8Bit();
     const char* p5 = ba5.data();
