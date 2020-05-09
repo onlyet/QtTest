@@ -23,5 +23,7 @@ void test()
     //QMap_demo();
     //QUuid_demo();
     //testHexQStringToByteArray();
-    drawCircleInPixmap();
+    //drawCircleInPixmap();
+	//QDateTime_demo();
+	mouseclick_test();
 }

@@ -45,3 +45,7 @@ void QUuid_demo();
 void testHexQStringToByteArray();
 
 void drawCircleInPixmap();
+
+void QDateTime_demo();
+
+void mouseclick_test();
