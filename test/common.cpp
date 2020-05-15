@@ -25,5 +25,7 @@ void test()
     //testHexQStringToByteArray();
     //drawCircleInPixmap();
 	//QDateTime_demo();
-	mouseclick_test();
+	//mouseclick_test();
+	//QGridLayout_demo();
+	QFormLayout_demo();
 }

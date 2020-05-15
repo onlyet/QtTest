@@ -49,3 +49,7 @@ void drawCircleInPixmap();
 void QDateTime_demo();
 
 void mouseclick_test();
+
+void QGridLayout_demo();
+
+void QFormLayout_demo();
