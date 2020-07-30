@@ -60,3 +60,5 @@ void mouseclick_test();
 void QGridLayout_demo();
 
 void QFormLayout_demo();
+
+void getHostMacAddress();

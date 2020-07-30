@@ -26,5 +26,6 @@ void test()
     //drawCircleInPixmap();
     //QVariantToFloat();
     //getWorkingDir();
-    workerSlot();
+    //workerSlot();
+    getHostMacAddress();
 }
