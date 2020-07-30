@@ -23,5 +23,8 @@ void test()
     //QMap_demo();
     //QUuid_demo();
     //testHexQStringToByteArray();
-    drawCircleInPixmap();
+    //drawCircleInPixmap();
+    //QVariantToFloat();
+    //getWorkingDir();
+    workerSlot();
 }

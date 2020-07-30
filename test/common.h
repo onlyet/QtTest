@@ -45,3 +45,9 @@ void QUuid_demo();
 void testHexQStringToByteArray();
 
 void drawCircleInPixmap();
+
+void QVariantToFloat();
+
+void getWorkingDir();
+
+void workerSlot();

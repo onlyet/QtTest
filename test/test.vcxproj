@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -18,11 +18,11 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
@@ -105,6 +105,7 @@
     <ClCompile Include="destructor_demo.cpp" />
     <ClCompile Include="drawCircleInPixmap.cpp" />
     <ClCompile Include="Exercise.cpp" />
+    <ClCompile Include="getWorkingDir.cpp" />
     <ClCompile Include="hexString.cpp" />
     <ClCompile Include="main.cpp">
       <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
@@ -116,6 +117,7 @@
       <ExecutionDescription Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc'ing %(Identity)...</ExecutionDescription>
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
     </ClCompile>
+    <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="moc_test.cpp" />
     <ClCompile Include="property_system_test.cpp" />
     <ClCompile Include="qapplication_exit.cpp" />
@@ -125,8 +127,10 @@
     <ClCompile Include="qstring_to_char_array.cpp" />
     <ClCompile Include="QTreeWidget_test.cpp" />
     <ClCompile Include="QUuid_demo.cpp" />
+    <ClCompile Include="QVariantToFloat.cpp" />
     <ClCompile Include="runProgramInExplorerProcess.cpp" />
     <ClCompile Include="signal_after_main_exec.cpp" />
+    <ClCompile Include="TestWorker.cpp" />
     <ClCompile Include="WCListWidget.cpp" />
     <ClCompile Include="WCListWidget_test.cpp" />
   </ItemGroup>
@@ -138,8 +142,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
+    <QtMoc Include="MainWindow.h" />
     <ClInclude Include="property_system_test.h" />
     <QtMoc Include="WCListWidget.h" />
+    <QtMoc Include="TestWorker.h" />
     <ClInclude Include="WCListWidget_test.h" />
     <QtMoc Include="signal_after_main_exec.h" />
   </ItemGroup>
