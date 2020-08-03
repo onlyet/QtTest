@@ -28,9 +28,10 @@ void test()
 	//mouseclick_test();
 	//QGridLayout_demo();
 	//QFormLayout_demo();
-	recursiveMutex();
+	//recursiveMutex();
     //QVariantToFloat();
     //getWorkingDir();
     //workerSlot();
-    getHostMacAddress();
+    //getHostMacAddress();
+	playAudioDemo();
 }

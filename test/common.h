@@ -64,3 +64,5 @@ void QFormLayout_demo();
 void recursiveMutex();void QFormLayout_demo();
 
 void getHostMacAddress();
+
+void playAudioDemo();
