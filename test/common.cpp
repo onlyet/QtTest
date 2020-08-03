@@ -27,5 +27,6 @@ void test()
 	//QDateTime_demo();
 	//mouseclick_test();
 	//QGridLayout_demo();
-	QFormLayout_demo();
+	//QFormLayout_demo();
+	recursiveMutex();
 }
