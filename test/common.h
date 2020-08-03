@@ -46,6 +46,13 @@ void testHexQStringToByteArray();
 
 void drawCircleInPixmap();
 
+void QVariantToFloat();
+
+void getWorkingDir();
+
+void workerSlot();
+void drawCircleInPixmap();
+
 void QDateTime_demo();
 
 void mouseclick_test();
@@ -54,4 +61,6 @@ void QGridLayout_demo();
 
 void QFormLayout_demo();
 
-void recursiveMutex();
+void recursiveMutex();void QFormLayout_demo();
+
+void getHostMacAddress();

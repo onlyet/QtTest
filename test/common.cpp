@@ -29,4 +29,8 @@ void test()
 	//QGridLayout_demo();
 	//QFormLayout_demo();
 	recursiveMutex();
+    //QVariantToFloat();
+    //getWorkingDir();
+    //workerSlot();
+    getHostMacAddress();
 }
