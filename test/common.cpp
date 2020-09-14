@@ -33,5 +33,6 @@ void test()
     //getWorkingDir();
     //workerSlot();
     //getHostMacAddress();
-	playAudioDemo();
+	//playAudioDemo();
+    makeSureFileExist();
 }
