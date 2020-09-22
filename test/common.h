@@ -68,3 +68,5 @@ void getHostMacAddress();
 void playAudioDemo();
 
 void makeSureFileExist();
+
+void IWorkerTest();

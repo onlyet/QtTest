@@ -34,5 +34,6 @@ void test()
     //workerSlot();
     //getHostMacAddress();
 	//playAudioDemo();
-    makeSureFileExist();
+    //makeSureFileExist();
+    IWorkerTest();
 }
