@@ -61,9 +61,6 @@
     <QtMoc Include="DestructorDemo.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="IWorker.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -193,9 +190,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="makeSureFileExist.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IWorker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
