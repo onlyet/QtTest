@@ -208,6 +208,7 @@
     <ClCompile Include="getWorkingDir.cpp" />
     <ClCompile Include="google_BreakPad_test.cpp" />
     <ClCompile Include="hexString.cpp" />
+    <ClCompile Include="IWorker.cpp" />
     <ClCompile Include="layout_demo.cpp" />
     <ClCompile Include="main.cpp">
       <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\%(Filename).moc</OutputFile>
@@ -228,6 +229,7 @@
       <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets</IncludePath>
     </ClCompile>
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="makeSureFileExist.cpp" />
     <ClCompile Include="moc_test.cpp" />
     <ClCompile Include="NameWidget.cpp" />
     <ClCompile Include="playAudioDemo.cpp" />
