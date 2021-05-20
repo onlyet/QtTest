@@ -1,4 +1,5 @@
 #include "common.h"
+//#include "DestructorDemo.h"
 
 void test()
 {
@@ -33,5 +34,13 @@ void test()
     //getWorkingDir();
     //workerSlot();
     //getHostMacAddress();
-	playAudioDemo();
+	//playAudioDemo();
+	//tts();
+    //QStorageInfoDemo();
+    //QTimerDemo();
+    //google_breakpad_test();
+    //SignalTest();
+    //wmic_demo();
+    //destructorDemo();
+    read_qint32_from_qbytearray();
 }

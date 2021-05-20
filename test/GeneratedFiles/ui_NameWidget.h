@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'NameWidget.ui'
 **
-** Created by: Qt User Interface Compiler version 5.14.1
+** Created by: Qt User Interface Compiler version 5.12.9
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -132,12 +132,12 @@ public:
 
     void retranslateUi(QWidget *NameWidget)
     {
-        NameWidget->setWindowTitle(QCoreApplication::translate("NameWidget", "Form", nullptr));
-        label_name->setText(QCoreApplication::translate("NameWidget", "\345\247\223\345\220\215\357\274\232\345\274\240\344\270\211", nullptr));
-        label->setText(QCoreApplication::translate("NameWidget", "  ( ", nullptr));
+        NameWidget->setWindowTitle(QApplication::translate("NameWidget", "Form", nullptr));
+        label_name->setText(QApplication::translate("NameWidget", "\345\247\223\345\220\215\357\274\232\345\274\240\344\270\211", nullptr));
+        label->setText(QApplication::translate("NameWidget", "  ( ", nullptr));
         colorLabel->setText(QString());
-        stateLabel->setText(QCoreApplication::translate("NameWidget", " \346\234\252\350\277\236\346\216\245", nullptr));
-        label_4->setText(QCoreApplication::translate("NameWidget", " ) ", nullptr));
+        stateLabel->setText(QApplication::translate("NameWidget", " \346\234\252\350\277\236\346\216\245", nullptr));
+        label_4->setText(QApplication::translate("NameWidget", " ) ", nullptr));
         subjectBtn->setText(QString());
     } // retranslateUi
 

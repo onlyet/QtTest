@@ -1,4 +1,6 @@
 #pragma once
+#include <QDebug>
+
 
 void test();
 
@@ -66,3 +68,19 @@ void recursiveMutex();void QFormLayout_demo();
 void getHostMacAddress();
 
 void playAudioDemo();
+
+void tts();
+
+void QStorageInfoDemo();
+
+void QTimerDemo();
+
+void google_breakpad_test();
+
+void SignalTest();
+
+void wmic_demo();
+
+void destructorDemo();
+
+void read_qint32_from_qbytearray();
