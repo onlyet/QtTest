@@ -84,3 +84,5 @@ void wmic_demo();
 void destructorDemo();
 
 void read_qint32_from_qbytearray();
+
+void signalSlotCopyTest();

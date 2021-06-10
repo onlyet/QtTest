@@ -36,11 +36,13 @@ void test()
     //getHostMacAddress();
 	//playAudioDemo();
 	//tts();
-    //QStorageInfoDemo();
+    //QStorageInfoDemo();d
     //QTimerDemo();
     //google_breakpad_test();
     //SignalTest();
     //wmic_demo();
     //destructorDemo();
-    read_qint32_from_qbytearray();
+    //read_qint32_from_qbytearray();
+    signalSlotCopyTest();
+
 }
