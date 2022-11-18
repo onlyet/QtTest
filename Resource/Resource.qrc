@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sound/alcohol_lamp.mp3</file>
+        <file>sound/evaporating_dish.mp3</file>
+        <file>sound/warn.mp3</file>
+        <file>LocList.xml</file>
+    </qresource>
+</RCC>

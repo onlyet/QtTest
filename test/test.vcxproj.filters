@@ -55,6 +55,12 @@
     <QtMoc Include="CopyTest.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="UIChinaCity.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CLoop.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -156,6 +162,15 @@
     <ClCompile Include="CopyTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UIChinaCity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QTableWidgetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CLoop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h">
@@ -172,5 +187,13 @@
     <QtUic Include="NameWidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="test.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\Resource\Resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>

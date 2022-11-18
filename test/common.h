@@ -86,3 +86,9 @@ void destructorDemo();
 void read_qint32_from_qbytearray();
 
 void signalSlotCopyTest();
+
+void outputCitys();
+
+int QTableWidgetTest();
+
+void deleteLaterTest();
