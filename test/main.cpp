@@ -1,3 +1,5 @@
+#if 0
+
 #include <QApplication>
 #include <QDebug>
 #include <QStringList>
@@ -15,3 +17,5 @@ int main(int argc, char *argv[])
     //QObject::connect(&a, &QApplication::aboutToQuit, &b, &Boss::emitAfterMainExec);
 	return a.exec();
 }
+
+#endif

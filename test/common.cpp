@@ -46,5 +46,6 @@ void test()
     //signalSlotCopyTest();
     //outputCitys();
     //QTableWidgetTest();
-    deleteLaterTest();
+    //deleteLaterTest();
+    //getIPTest();
 }

@@ -92,3 +92,5 @@ void outputCitys();
 int QTableWidgetTest();
 
 void deleteLaterTest();
+
+void getIPTest();
