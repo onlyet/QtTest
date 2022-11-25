@@ -252,6 +252,7 @@
     <ClCompile Include="property_system_test.cpp" />
     <ClCompile Include="qapplication_exit.cpp" />
     <ClCompile Include="QDateTime_demo.cpp" />
+    <ClCompile Include="qfileinfo_test.cpp" />
     <ClCompile Include="QListDemo.cpp" />
     <ClCompile Include="QMap_demo.cpp" />
     <ClCompile Include="QMenu_test.cpp" />

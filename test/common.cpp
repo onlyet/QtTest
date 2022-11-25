@@ -48,4 +48,5 @@ void test()
     //QTableWidgetTest();
     //deleteLaterTest();
     //getIPTest();
+    qfileinfo_test();
 }

@@ -1,3 +1,5 @@
+#if 0
+
 #include "common.h"
 
 #if 0
@@ -247,3 +249,4 @@ int __cdecl main()
 
     return 0;
 }
+#endif

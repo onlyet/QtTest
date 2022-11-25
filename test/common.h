@@ -94,3 +94,5 @@ int QTableWidgetTest();
 void deleteLaterTest();
 
 void getIPTest();
+
+void qfileinfo_test();
