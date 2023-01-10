@@ -43,10 +43,10 @@ void test()
     //wmic_demo();
     //destructorDemo();
     //read_qint32_from_qbytearray();
-    //signalSlotCopyTest();
+    signalSlotCopyTest();
     //outputCitys();
     //QTableWidgetTest();
     //deleteLaterTest();
     //getIPTest();
-    qfileinfo_test();
+    //qfileinfo_test();
 }

@@ -100,7 +100,7 @@ void signalSlotCopyTest()
 
 void CSender::sendSignal()
 {
-    CCopyable copyable(1,"momo");
+    CCopyable copyable(123,"hello");
 
     switch (CaseNum)
     {
